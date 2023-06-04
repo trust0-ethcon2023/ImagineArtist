@@ -1,0 +1,38 @@
+import ~/showcase_popup_common.sbss
+
+    $_CONTENT_PADDING = 25dp
+    $_CONTENT_BORDER_RADIUS = 10dp
+    $_TITLE_BOTTOM_MARGIN = 20dp
+    $_TITLE_TEXT_SIZE = 1.3
+    $_MESSAGE_BOTTOM_MARGIN = 30dp
+    $_MESSAGE_TEXT_SIZE = 1.0
+
+/popup {
+    page-background-color: $THEME_COLOR_POPUP_BACKGROUND;
+}
+
+/popup/content {
+    display: block;
+    position: absolute;
+    gravity: center;
+    padding: $_CONTENT_PADDING;
+    border-radius: $_CONTENT_BORDER_RADIUS;
+    background-color: $THEME_COLOR_BOX;
+}
+
+/popup/content/title {
+    margin-bottom: $_TITLE_BOTTOM_MARGIN;
+    font-family: @{$SANS_MEDIUM};
+    font-size: $_TITLE_TEXT_SIZE;
+    text-align: center;
+    text-color: $THEME_COLOR_TEXT;
+}
+
+/popup/content/message {
+    margin-bottom: $_MESSAGE_BOTTOM_MARGIN;
+    font-family: @{$SANS_REGULAR};
+    font-size: $_MESSAGE_TEXT_SIZE;
+    text-color: $THEME_COLOR_LIGHT_TEXT;
+    text-align: left;
+    line-break-mode: word-wrap;
+}

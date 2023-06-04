@@ -1,0 +1,16 @@
+=begin catalog: first-responder=prompt, script-when-back=back
+
+=begin header
+=begin em
+@{What}
+=end em
+@{Did You Draw?}
+=end header
+
+=object textfield: id=prompt, style=textfield_prompt
+
+=begin actions
+=(object button: label="@{Next}", script=next, style=btn_action)=
+=end actions
+
+=end catalog

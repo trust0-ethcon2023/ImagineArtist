@@ -1,0 +1,61 @@
+import catalog_common.sbss
+
+    $_DRAWING_SIZE = (1pw-30dp)
+    $_DRAWING_PEN_WIDTH = 5dp
+    $_DRAWING_BORDER_WIDTH = 1dp
+    $_TOOL_BUTTON_WIDTH = 44dp 
+    $_TOOL_BUTTON_HEIGHT = 60dp 
+    $_TOOL_BUTTON_MARGIN = 8dp
+    $_TOOL_BUTTON_TEXT_SIZE = 0.9
+    $_TOOL_IMAGE_SIZE = 24dp 
+    $_TOOL_IMAGE_TOP_MARGIN = 10dp
+    $_ACTIONS_BOTTOM_MARGIN = (1eb+30dp)
+
+#drawing {
+    width: $_DRAWING_SIZE;
+    height: $_DRAWING_SIZE;
+    pen-width: $_DRAWING_PEN_WIDTH;
+    content-border-width: $_DRAWING_BORDER_WIDTH;
+    content-border-color: $THEME_COLOR_MAIN;
+    content-background-color: $COLOR_WHITE;
+}
+
+#section_tool {
+    width: $_TOOL_BUTTON_WIDTH;
+    height: $_TOOL_BUTTON_HEIGHT;
+    margin: 0 $_TOOL_BUTTON_MARGIN;
+}
+
+#img_tool {
+    width: $_TOOL_IMAGE_SIZE;
+    height: $_TOOL_IMAGE_SIZE;
+    margin-top: $_TOOL_IMAGE_TOP_MARGIN;
+}
+
+#btn_tool {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+    label-font-family: @{$SANS_MEDIUM};
+    label-font-size: $_TOOL_BUTTON_TEXT_SIZE;
+    label-color: $THEME_COLOR_MAIN;
+    highlighted-label-color: $COLOR_DARK_GRAY;
+    label-padding-top: $_TOOL_IMAGE_TOP_MARGIN+$_TOOL_IMAGE_SIZE;
+}
+
+/catalog/toolbar {
+    text-align: right;
+}
+
+/catalog/toolbar/tool {
+    display: none;
+}
+
+/catalog/actions {
+    display: block;
+    position: absolute;
+    gravity: bottom;
+    y: -$_ACTIONS_BOTTOM_MARGIN;
+    text-align: center;
+}

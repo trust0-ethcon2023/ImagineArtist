@@ -1,0 +1,17 @@
+=begin catalog
+
+=begin header
+=begin em
+@{Imagine}
+=end em
+@{You are 
+An Artist}
+=end header
+
+=object image: filename=img_main.png, style=img_main
+
+=begin actions
+=(object button: label="@{Let's draw}", script=start, style=btn_action)=
+=end actions
+
+=end catalog

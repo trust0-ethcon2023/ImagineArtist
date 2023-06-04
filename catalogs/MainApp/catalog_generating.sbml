@@ -1,0 +1,32 @@
+=begin catalog: script-when-loaded=on_loaded, script-when-back=back
+
+=begin header
+=begin em
+@{Generating}
+=end em
+@{What
+You
+Dream}
+=end header
+
+=object image: filename="${image}", style=img_source
+
+=object section: section=generating, style=section_generating
+=begin generating: id=generating
+=object image: id=img.generating, style=img_generating
+=object sbml: id=effect.generating, filename=generating_effect.sbml, style=effect_generating
+=object button: id=btn.regenerate, label="@{Try Again}", script=regenerate, hidden=yes, style=btn_regenerate
+=end generating
+
+=begin progress
+=object progress: id=progress.generating, style=progress_generating
+=begin value
+=object label: id=label.progress, text="0.0%", style=label_progress
+=end value
+=end progress
+
+=begin actions
+=(object button: id=btn.next, label="@{Next}", disabled-label="@{Please wait until done}", enabled=no, script=next, style=btn_action)=
+=end actions
+
+=end catalog

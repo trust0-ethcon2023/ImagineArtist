@@ -1,0 +1,37 @@
+import S_CONFIRM_bottom_sheet.sbss
+
+    $_INFO_TOP_MARGIN = 10dp
+    $_INFO_BOTTOM_MARGIN = 30dp
+    $_INFO_PADDING = 15dp
+    $_INFO_BORDER_WIDTH = 1dp
+    $_INFO_BORDER_RADIUS = 6dp
+    $_INFO_LOGO_TOP_MARGIN = 15dp
+    $_INFO_TITLE_TOP_MARGIN = 16dp
+    $_INFO_TITLE_TEXT_SIZE = 1.4
+    $_LOGO_IMAGE_WIDTH = 160dp
+
+#img_logo {
+    width: $_LOGO_IMAGE_WIDTH;
+}
+
+#bold {
+    font-family: @{$SANS_BOLD};
+}
+
+/sheet/info {
+    margin: $_INFO_TOP_MARGIN 0 $_INFO_BOTTOM_MARGIN 0;
+    padding: $_INFO_PADDING;
+    border-width: $_INFO_BORDER_WIDTH;
+    border-radius: $_INFO_BORDER_RADIUS;
+}
+
+/sheet/info/logo {
+    margin-top: $_INFO_LOGO_TOP_MARGIN;
+}
+
+/sheet/info/title {
+    margin-top: $_INFO_TITLE_TOP_MARGIN;
+    font-family: @{$SANS_SEMIBOLD};
+    font-size: $_INFO_TITLE_TEXT_SIZE;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+import catalog_nft_common.sbss
+
+    $_IMAGE_SECTION_SIZE = 200dp
+    $_IMAGE_SECTION_BORDER_RADIUS = 16dp
+
+#section_image {
+    width: $_IMAGE_SECTION_SIZE;
+    height: $_IMAGE_SECTION_SIZE;
+    content-border-radius: $_IMAGE_SECTION_BORDER_RADIUS;
+}
+
+#img_nft {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
+
+#effect_image {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
+
+/catalog/status/image {
+    display: none;
+}

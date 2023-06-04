@@ -1,0 +1,34 @@
+=begin catalog: script-when-back=back
+
+=begin header
+=begin em
+@{Draw}
+=end em
+@{Anything What You Want:}
+=end header
+
+=object drawing: id=drawing, script-when-done=on_drawing_done, style=drawing
+
+=begin toolbar
+=(object section: section=tool.undo, style=section_tool)=\
+=(object section: section=tool.redo, style=section_tool)=\
+=(object section: section=tool.clear, style=section_tool)=
+=begin tool: id=tool.undo
+=object image: filename=btn_tool_undo.png, style=img_tool
+=object button: label="@{Undo}", script=undo, style=btn_tool
+=end tool
+=begin tool: id=tool.redo
+=object image: filename=btn_tool_redo.png, style=img_tool
+=object button: label="@{Redo}", script=redo, style=btn_tool
+=end tool
+=begin tool: id=tool.clear
+=object image: filename=btn_tool_clear.png, style=img_tool
+=object button: label="@{Clear}", script=clear, style=btn_tool
+=end tool
+=end toolbar
+
+=begin actions
+=(object button: id=btn.next, label="@{Next}", script=next, style=btn_action)=
+=end actions
+
+=end catalog

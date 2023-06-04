@@ -1,0 +1,35 @@
+import catalog_common.sbss
+
+    $_HEADER_TOP_MARGIN = (1sbh+80dp)
+    $_HEADER_TEXT_SIZE = 2.8
+    $_HEADER_EM_BOTTOM_MARGIN = 10dp
+    $_HEADER_EM_TEXT_SIZE = 4.0
+    $_HEADER_PARAGRAPH_SPACING = -6dp
+    $_MAIN_IMAGE_SIZE = 0.8pw
+    $_MAIN_IMAGE_TOP_MARGIN = 40dp
+    $_ACTIONS_BOTTOM_MARGIN = (1eb+30dp)
+
+#img_main {
+    width: $_MAIN_IMAGE_SIZE;
+    height: $_MAIN_IMAGE_SIZE;
+    margin-top: $_MAIN_IMAGE_TOP_MARGIN;
+}
+
+/catalog/header {
+    margin-top: $_HEADER_TOP_MARGIN;
+    font-size: $_HEADER_TEXT_SIZE;
+    paragraph-spacing: $_HEADER_PARAGRAPH_SPACING;
+}
+
+/catalog/header/em {
+    font-size: $_HEADER_EM_TEXT_SIZE;
+    margin-bottom: $_HEADER_EM_BOTTOM_MARGIN;
+}
+
+/catalog/actions {
+    display: block;
+    position: absolute;
+    gravity: bottom;
+    y: -$_ACTIONS_BOTTOM_MARGIN;
+    text-align: center;
+}

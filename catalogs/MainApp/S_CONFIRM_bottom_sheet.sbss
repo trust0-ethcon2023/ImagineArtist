@@ -1,0 +1,47 @@
+import ~/showcase_bottom_sheet_common.sbss
+
+    $_MESSAGE_TOP_MARGIN = 15dp
+    $_MESSAGE_SIDE_MARGIN = 40dp
+    $_MESSAGE_TEXT_SIZE = 1.2
+    $_ACTIONS_TOP_MARGIN = 30dp
+    $_ACTIONS_BOTTOM_MARGIN = 20dp
+    $_ACTION_BUTTON_WIDTH = 140dp
+    $_ACTION_BUTTON_MARGIN = 10dp
+    $_ACTION_BUTTON_BORDER_RADIUS = 6dp
+
+#btn_action {
+    width: $_ACTION_BUTTON_WIDTH;
+    height: $_ACTION_BUTTON_HEIGHT;
+    margin: 0 $_ACTION_BUTTON_MARGIN;
+    content-border-radius: $_ACTION_BUTTON_BORDER_RADIUS;
+}
+
+#btn_action.light {
+    width: $_ACTION_BUTTON_WIDTH;
+    content-border-radius: $_ACTION_BUTTON_BORDER_RADIUS;
+}
+
+/sheet/message {
+    margin: $_MESSAGE_TOP_MARGIN $_MESSAGE_SIDE_MARGIN 0 $_MESSAGE_SIDE_MARGIN;
+    font-family: @{$SANS_MEDIUM};
+    font-size: $_MESSAGE_TEXT_SIZE;
+    text-align: center;
+    line-break-mode: word-wrap;
+}
+
+/sheet/actions {
+    margin: $_ACTIONS_TOP_MARGIN 0 $_ACTIONS_BOTTOM_MARGIN 0;
+    text-align: center;
+}
+
+if "${ok-label}" != ""
+    #btn_ok {
+        label: @{${ok-label}};
+    }
+end
+
+if "${cancel-label}" != ""
+    #btn_cancel {
+        label: @{${cancel-label}};
+    }
+end

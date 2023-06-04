@@ -1,0 +1,30 @@
+=begin sheet: script-when-cancel=on_cancel
+
+=begin handle
+=object blank: style=blank_handle
+=end handle
+
+=object section: section=header, style=section_header
+=begin header: id=header
+=(object blank: style=blank_title)==(object label: text="@{Confirm}", style=label_title)=
+=end header
+
+=begin info
+=begin logo
+=object image: filename=img_logo_near.png, style=img_logo
+=end logo
+=begin title
+@{Near Protocol is near you}
+=end title
+=end info
+
+=begin message
+@{Your image will be issued as NFT on =[bold|Near Protocol]=.} @{${message}}
+=end message
+
+=begin actions
+=(object button: script=cancel, label="@{Cancel}", style=btn_action.light, style=btn_cancel)=\
+=(object button: script=ok, label="@{OK}", style=btn_action, style=btn_ok)=
+=end actions
+
+=end sheet

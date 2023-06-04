@@ -1,0 +1,6 @@
+import ~/themes.sbss
+
+#effect_generating {
+    width: 1pw;
+    height: 1ph;
+}

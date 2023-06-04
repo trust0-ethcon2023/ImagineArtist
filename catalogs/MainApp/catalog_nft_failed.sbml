@@ -1,0 +1,17 @@
+=begin catalog: script-when-back=back
+
+=begin status
+=begin logo
+=object image: filename="img_logo_near.png", style=img_logo
+=end logo
+=object image: filename=img_transaction_failed.png, style=img_status
+=begin info
+@{Sorry. Your transaction has failed.}
+=end info
+=end status
+
+=begin transaction
+=[link:script=show_transaction|Show transaction on Explore]=
+=end transaction
+
+=end catalog

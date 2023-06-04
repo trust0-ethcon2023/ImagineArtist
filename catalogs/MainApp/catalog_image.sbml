@@ -1,0 +1,26 @@
+=begin catalog: script-when-back=back
+
+=begin header
+=begin em
+@{Your Dream}
+=end em
+@{Has Come True!}
+=end header
+
+=object section: section=image, style=section_image
+=begin image: id=image
+=object image: filename="${generated-image}", style=img_generated
+=object image: filename="${image}", style=img_source
+=end image
+
+=object section: id=section.nft.image, section=nft.image, hidden=yes, style=section_nft.image
+=begin image: id=nft.image
+=object image: filename="${generated-image}", style=img_generated
+=object image: filename="${image}", style=img_source
+=end image
+
+=begin actions
+=(object button: id=btn.mint, label="@{Mint NFT}", script=mint_nft, style=btn_action)=
+=end actions
+
+=end catalog

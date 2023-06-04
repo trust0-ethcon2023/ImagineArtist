@@ -1,0 +1,7 @@
+=begin sbml
+
+=begin effect
+=object effect: id=effect.generating, filename="generating.json", style=effect_generating
+=end effect
+
+=end sbml

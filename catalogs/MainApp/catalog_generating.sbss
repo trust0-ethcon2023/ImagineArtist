@@ -1,0 +1,108 @@
+import catalog_common.sbss
+
+    $_SOURCE_IMAGE_SIZE = 150dp
+    $_SOURCE_IMAGE_TOP_MARGIN = (1sbh+36dp)
+    $_SOURCE_IMAGE_LEFT_MARGIN = 6dp
+    $_SOURCE_IMAGE_RIGHT_MARGIN = 15dp
+    $_SOURCE_IMAGE_BORDER_RADIUS = 10dp
+    $_SOURCE_IMAGE_BORDER_WIDTH = 1dp
+    $_GENERATING_SECTION_SIZE = (1pw-30dp)
+    $_GENERATING_SECTION_TOP_MARGIN = 40dp
+    $_GENERATING_SECTION_BORDER_WIDTH = 1dp
+    $_REGENERATE_BUTTON_HEIGHT = 38dp
+    $_REGENERATE_BUTTON_MARGIN = 10dp
+    $_REGENERATE_BUTTON_PADDING = 20dp
+    $_REGENERATE_BUTTON_BORDER_WIDTH = 1dp
+    $_REGENERATE_BUTTON_BORDER_RADIUS = $_REGENERATE_BUTTON_HEIGHT/2
+    $_REGENERATE_BUTTON_TEXT_SIZE = 1.1
+    $_GENERATING_PROGRESS_WIDTH = $_GENERATING_SECTION_SIZE
+    $_GENERATING_PROGRESS_HEIGHT = 30dp
+    $_PROGRESS_LABEL_WIDTH = $_GENERATING_SECTION_SIZE
+    $_PROGRESS_LABEL_HEIGHT = 16dp
+    $_PROGRESS_TEXT_SIZE = 1.0
+    $_ACTIONS_BOTTOM_MARGIN = (1eb+30dp)
+
+#img_source {
+    width: $_SOURCE_IMAGE_SIZE;
+    height: $_SOURCE_IMAGE_SIZE;
+    position: absolute;
+    gravity: right-top;
+    x: -$_SOURCE_IMAGE_RIGHT_MARGIN;
+    y: $_SOURCE_IMAGE_TOP_MARGIN;
+    content-border-width: $_SOURCE_IMAGE_BORDER_WIDTH;
+    content-border-color: $THEME_COLOR_MAIN;
+    content-border-radius: $_SOURCE_IMAGE_BORDER_RADIUS;
+    content-background-color: $COLOR_WHITE;
+}
+
+#section_generating {
+    width: $_GENERATING_SECTION_SIZE;
+    height: $_GENERATING_SECTION_SIZE;
+    margin-top: $_GENERATING_SECTION_TOP_MARGIN;
+    content-border-width: $_GENERATING_SECTION_BORDER_WIDTH;
+    content-border-color: $THEME_COLOR_MAIN;
+    content-background-color: $COLOR_WHITE;
+}
+
+#img_generating {
+    width: 1pw;
+    height: 1ph;
+    position: absolute;
+    gravity: center;
+}
+
+#effect_generating {
+    width: 0.6pw;
+    height: 0.6ph;
+    position: absolute;
+    gravity: center;
+}
+
+#btn_regenerate {
+    height: $_REGENERATE_BUTTON_HEIGHT;
+    position: absolute;
+    gravity: right-bottom;
+    x: -$_REGENERATE_BUTTON_MARGIN;
+    y: -$_REGENERATE_BUTTON_MARGIN;
+    label-font-family: @{$SANS_MEDIUM};
+    label-font-size: $_REGENERATE_BUTTON_TEXT_SIZE;
+    label-color: $THEME_COLOR_MAIN;
+    content-padding: 0 $_REGENERATE_BUTTON_PADDING;
+    content-border-width: $_REGENERATE_BUTTON_BORDER_WIDTH;
+    content-border-color: $THEME_COLOR_MAIN;
+    content-border-radius: $_REGENERATE_BUTTON_BORDER_RADIUS;
+    content-background-color: $COLOR_WHITE;
+}
+
+#progress_generating {
+    width: $_GENERATING_PROGRESS_WIDTH;
+    height: $_GENERATING_PROGRESS_HEIGHT;
+    track-color: $COLOR_WHITE;
+    progress-color: $THEME_COLOR_MAIN;
+}
+
+#label_progress {
+    width: $_PROGRESS_LABEL_WIDTH;
+    height: $_PROGRESS_LABEL_HEIGHT;
+    font-family: $SANS_MEDIUM;
+    font-size: $_PROGRESS_TEXT_SIZE;
+    text-color: $THEME_COLOR_TEXT;
+    text-align: center;
+}
+
+/catalog/header {
+    margin-right: $_SOURCE_IMAGE_SIZE+$_SOURCE_IMAGE_LEFT_MARGIN+$_SOURCE_IMAGE_RIGHT_MARGIN;
+    text-align: right;
+}
+
+/catalog/generating {
+    display: none;
+}
+
+/catalog/actions {
+    display: block;
+    position: absolute;
+    gravity: bottom;
+    y: -$_ACTIONS_BOTTOM_MARGIN;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+=begin popup
+
+=begin content
+=begin title
+${title}
+=end title
+
+=begin message
+${message}
+=end message
+
+=begin actions
+=(object button: script=done, label="@{OK}", style=btn_action.line)=
+=end actions
+=end content
+
+=end popup

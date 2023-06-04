@@ -1,0 +1,21 @@
+=begin catalog: script-when-loaded=on_loaded, script-when-back=back
+
+=begin status
+=begin logo
+=object image: filename="img_logo_near.png", style=img_logo
+=end logo
+=object section: section=image, style=section_image
+=begin image: id=image
+=object image: filename="${image}", style=img_nft
+=object effect: filename=nft_progress.json, style=effect_image
+=end image
+=begin info
+@{Your transaction is pending.}
+=end info
+=end status
+
+=begin transaction
+=[link:script=show_transaction|Show transaction on Explore]=
+=end transaction
+
+=end catalog

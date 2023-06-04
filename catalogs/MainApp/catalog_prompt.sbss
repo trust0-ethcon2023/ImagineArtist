@@ -1,0 +1,33 @@
+import catalog_common.sbss
+
+    $_PROMPT_TEXTFIELD_WIDTH = (1pw-30dp)
+    $_PROMPT_TEXTFIELD_HEIGHT = 60dp
+    $_PROMPT_TEXTFIELD_PADDING = 15dp
+    $_PROMPT_TEXTFIELD_BORDER_WIDTH = 1dp
+    $_PROMPT_TEXTFIELD_BORDER_RADIUS = 10dp
+    $_PROMPT_TEXT_SIZE = 2.0
+    $_ACTIONS_BOTTOM_MARGIN = (1eb+30dp)
+
+#textfield_prompt {
+    width: $_PROMPT_TEXTFIELD_WIDTH;
+    height: $_PROMPT_TEXTFIELD_HEIGHT;
+    content-padding: 0 $_PROMPT_TEXTFIELD_PADDING;
+    font-family: @{$SANS_BOLD};
+    font-size: $_PROMPT_TEXT_SIZE;
+    content-border-width: $_PROMPT_TEXTFIELD_BORDER_WIDTH;
+    content-border-color: $THEME_COLOR_MAIN;
+    content-border-radius: $_PROMPT_TEXTFIELD_BORDER_RADIUS;
+    content-background-color: $COLOR_WHITE;
+}
+
+#btn_action {
+    moves-on-keyboard: yes;
+}
+
+/catalog/actions {
+    display: block;
+    position: absolute;
+    gravity: bottom;
+    y: -$_ACTIONS_BOTTOM_MARGIN;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+import catalog_common.sbss
+
+    $_STATUS_TOP_MARGIN = (1sbh+70dp)
+    $_LOGO_IMAGE_HEIGHT = 44dp
+    $_LOGO_IMAGE_BOTTOM_MARGIN = 64dp
+    $_STATUS_IMAGE_SIZE = 160dp
+    $_STATUS_INFO_TOP_MARGIN = 30dp
+    $_STATUS_INFO_TEXT_SIZE = 1.3
+    $_TRANSACTION_BOTTOM_MARGIN = (1eb+80dp)
+    $_TRANSACTION_TEXT_SIZE = 1.1
+
+#img_logo {
+    height: $_LOGO_IMAGE_HEIGHT;
+}
+
+#img_status {
+    width: $_STATUS_IMAGE_SIZE;
+    height: $_STATUS_IMAGE_SIZE;
+}
+
+#link {
+    text-color: $THEME_COLOR_TEXT;
+    text-decoration: underline;
+}
+
+/catalog/status {
+    margin-top: $_STATUS_TOP_MARGIN;
+}
+
+/catalog/status/logo {
+    margin-bottom: $_LOGO_IMAGE_BOTTOM_MARGIN;
+}
+
+/catalog/status/info {
+    margin-top: $_STATUS_INFO_TOP_MARGIN;
+    font-family: @{$SANS_MEDIUM};
+    font-size: $_STATUS_INFO_TEXT_SIZE;
+    text-align: center;
+}
+
+/catalog/transaction {
+    display: block;
+    position: absolute;
+    gravity: bottom;
+    y: -$_TRANSACTION_BOTTOM_MARGIN;
+    font-family: @{$SANS_MEDIUM};
+    font-size: $_TRANSACTION_TEXT_SIZE;
+    text-align: center;
+}
