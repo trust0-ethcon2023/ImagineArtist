@@ -44,13 +44,13 @@ function back() {
         });  
 }
 
-function _generate_image(path, prompt) {
+function _generate_image(name, prompt) {
     var uid = device("id");
 
-    image(path)
-        .then(function(image) {
-            return image.resize(512, 512);
-        })
+    media("image", name, {
+        "width": 512,
+        "height": 512
+    })
         .then(function(image) {
             return image.encode("base64", "png");
         })
