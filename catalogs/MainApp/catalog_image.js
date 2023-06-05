@@ -33,19 +33,18 @@ function _capture_nft_image() {
     view.object("btn.mint").action("wait");
 }
 
-function _mint_nft(path, prompt) {
+function _mint_nft(name, prompt) {
     var uid = device("id");
     var title = "Imagine You are An Artist";
     var author = "0xD3c5f6368a7bd1F9259467AC9A82654bE145bE6D";
     var description = "Image generated from AGLIPPA"
     
-    image(path)
-        .then(function(image) {
-            return image.resize(512, 512);
-        })
-        .then(function(image) {
-            return image.encode("base64", "png");
-        })
+    media("image", name, {
+        "width": 512,
+        "height": 512,
+        "output": "base64",
+        "format": "png"
+    })
         .then(function(image) {
             return nft.mint_nft(uid, title, author, description, image, prompt)
         })
