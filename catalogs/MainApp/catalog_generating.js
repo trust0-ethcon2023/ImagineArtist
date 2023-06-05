@@ -49,11 +49,10 @@ function _generate_image(name, prompt) {
 
     media("image", name, {
         "width": 512,
-        "height": 512
+        "height": 512,
+        "output": "base64",
+        "format": "png"
     })
-        .then(function(image) {
-            return image.encode("base64", "png");
-        })
         .then(function(image) {
             return aglippa.generate_from_drawing(uid, image, prompt)
         })
