@@ -1,4 +1,4 @@
-=begin catalog: script-when-back=back
+=begin catalog: script-when-back=back, script-when-loaded=on_loaded
 
 =begin header
 =begin em
