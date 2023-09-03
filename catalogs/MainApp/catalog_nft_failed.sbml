@@ -2,7 +2,7 @@
 
 =begin status
 =begin logo
-=object image: filename="img_logo_near.png", style=img_logo
+=object image: filename="img_logo_polygon.png", style=img_logo
 =end logo
 =object image: filename=img_transaction_failed.png, style=img_status
 =begin info

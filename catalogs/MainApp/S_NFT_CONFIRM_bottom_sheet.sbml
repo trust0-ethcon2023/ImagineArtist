@@ -11,15 +11,15 @@
 
 =begin info
 =begin logo
-=object image: filename=img_logo_near.png, style=img_logo
+=object image: filename=img_logo_polygon.png, style=img_logo
 =end logo
 =begin title
-@{Near Protocol is near you}
+
 =end title
 =end info
 
 =begin message
-@{Your image will be issued as NFT on =[bold|Near Protocol]=.} @{${message}}
+@{Your image will be issued as NFT on =[bold|Polygon Mumbai]=.} @{${message}}
 =end message
 
 =begin actions

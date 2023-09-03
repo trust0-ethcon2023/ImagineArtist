@@ -1,5 +1,5 @@
 function show_transaction() {
-    var url = "https://explorer.testnet.aurora.dev/tx/" + $data["transaction-hash"];
+    var url = "https://mumbai.polygonscan.com/tx/" + $data["transaction-hash"];
 
     controller.action("link", {
         "url": url,

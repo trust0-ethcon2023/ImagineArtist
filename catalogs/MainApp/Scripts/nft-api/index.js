@@ -1,5 +1,5 @@
 var module = (function() {
-    const _baseurl = "https://us-central1-aglippa-for-ethseoul-2023.cloudfunctions.net/nft";
+    const _baseurl = "https://us-central1-imagineartist2023.cloudfunctions.net/nft";
 
     function _request_api(path, method, params) {
         var url = path ? _baseurl + "/" + path : _baseurl;
